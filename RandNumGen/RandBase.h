@@ -12,13 +12,12 @@
 class RandBase {
 public:
     RandBase(std::size_t Dimensionality_);
-
     virtual ~RandBase() {}
+    virtual RandBase* clone() const =0;
 
     std::size_t GetDimensionality() const;
 
     // Pure virtual functions required by inheriting classes
-    virtual RandBase* clone() const =0;
     virtual void GetUniforms(std::vector<double>& variates) =0;
     virtual void Skip(std::size_t numberOfPaths_) =0;
     virtual void SetSeed(std::size_t Seed) =0;

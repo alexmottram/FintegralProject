@@ -11,30 +11,30 @@
 				<Option working_dir="/cygdrive/c/Git/FintegralProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/cygdrive/c/Git/FintegralProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/cygdrive/c/Git/FintegralProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="FintegralProject">
@@ -44,19 +44,18 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include"/>
-					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/../include/w32api"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 FintegralProject"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 FintegralProject"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="FintegralProject/fast">
@@ -66,22 +65,63 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include"/>
-					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/../include/w32api"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 FintegralProject/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 FintegralProject/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Git/FintegralProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/DataStorage/AssetPriceData.cpp">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/DataStorage/AssetPriceData.h">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/DataStorage/InnerDataStorage.cpp">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/DataStorage/InnerDataStorage.h">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/DataStorage/PathData.cpp">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/DataStorage/PathData.h">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/Models/AssetPrice.cpp">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/Models/AssetPrice.h">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/Models/LogNormalPrice.cpp">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/Models/LogNormalPrice.h">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/Models/ModelBase.cpp">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/Models/ModelBase.h">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/MonteCarlo.cpp">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/MonteCarlo.h">
+			<Option target="FintegralProject"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Git/FintegralProject/RandNumGen/PMSeedGen.cpp">
 			<Option target="FintegralProject"/>
 		</Unit>
@@ -98,6 +138,24 @@
 			<Option target="FintegralProject"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Git/FintegralProject/RandNumGen/RandUniform.h">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/SimResults/DataSet.cpp">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/SimResults/DataSet.h">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/SimResults/PathBase.cpp">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/SimResults/PathBase.h">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/SimResults/ResultsHeaderBase.cpp">
+			<Option target="FintegralProject"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/FintegralProject/SimResults/ResultsHeaderBase.h">
 			<Option target="FintegralProject"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Git/FintegralProject/main.cpp">

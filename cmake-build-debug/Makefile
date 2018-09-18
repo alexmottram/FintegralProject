@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/Alex/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/alexa/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/Alex/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/alexa/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Git/FintegralProject/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/Alex/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/alexa/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/Alex/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/alexa/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -122,6 +122,195 @@ FintegralProject: cmake_check_build_system
 FintegralProject/fast:
 	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/build
 .PHONY : FintegralProject/fast
+
+DataStorage/AssetPriceData.o: DataStorage/AssetPriceData.cpp.o
+
+.PHONY : DataStorage/AssetPriceData.o
+
+# target to build an object file
+DataStorage/AssetPriceData.cpp.o:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/DataStorage/AssetPriceData.cpp.o
+.PHONY : DataStorage/AssetPriceData.cpp.o
+
+DataStorage/AssetPriceData.i: DataStorage/AssetPriceData.cpp.i
+
+.PHONY : DataStorage/AssetPriceData.i
+
+# target to preprocess a source file
+DataStorage/AssetPriceData.cpp.i:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/DataStorage/AssetPriceData.cpp.i
+.PHONY : DataStorage/AssetPriceData.cpp.i
+
+DataStorage/AssetPriceData.s: DataStorage/AssetPriceData.cpp.s
+
+.PHONY : DataStorage/AssetPriceData.s
+
+# target to generate assembly for a file
+DataStorage/AssetPriceData.cpp.s:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/DataStorage/AssetPriceData.cpp.s
+.PHONY : DataStorage/AssetPriceData.cpp.s
+
+DataStorage/InnerDataStorage.o: DataStorage/InnerDataStorage.cpp.o
+
+.PHONY : DataStorage/InnerDataStorage.o
+
+# target to build an object file
+DataStorage/InnerDataStorage.cpp.o:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/DataStorage/InnerDataStorage.cpp.o
+.PHONY : DataStorage/InnerDataStorage.cpp.o
+
+DataStorage/InnerDataStorage.i: DataStorage/InnerDataStorage.cpp.i
+
+.PHONY : DataStorage/InnerDataStorage.i
+
+# target to preprocess a source file
+DataStorage/InnerDataStorage.cpp.i:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/DataStorage/InnerDataStorage.cpp.i
+.PHONY : DataStorage/InnerDataStorage.cpp.i
+
+DataStorage/InnerDataStorage.s: DataStorage/InnerDataStorage.cpp.s
+
+.PHONY : DataStorage/InnerDataStorage.s
+
+# target to generate assembly for a file
+DataStorage/InnerDataStorage.cpp.s:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/DataStorage/InnerDataStorage.cpp.s
+.PHONY : DataStorage/InnerDataStorage.cpp.s
+
+DataStorage/PathData.o: DataStorage/PathData.cpp.o
+
+.PHONY : DataStorage/PathData.o
+
+# target to build an object file
+DataStorage/PathData.cpp.o:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/DataStorage/PathData.cpp.o
+.PHONY : DataStorage/PathData.cpp.o
+
+DataStorage/PathData.i: DataStorage/PathData.cpp.i
+
+.PHONY : DataStorage/PathData.i
+
+# target to preprocess a source file
+DataStorage/PathData.cpp.i:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/DataStorage/PathData.cpp.i
+.PHONY : DataStorage/PathData.cpp.i
+
+DataStorage/PathData.s: DataStorage/PathData.cpp.s
+
+.PHONY : DataStorage/PathData.s
+
+# target to generate assembly for a file
+DataStorage/PathData.cpp.s:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/DataStorage/PathData.cpp.s
+.PHONY : DataStorage/PathData.cpp.s
+
+Models/AssetPrice.o: Models/AssetPrice.cpp.o
+
+.PHONY : Models/AssetPrice.o
+
+# target to build an object file
+Models/AssetPrice.cpp.o:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/AssetPrice.cpp.o
+.PHONY : Models/AssetPrice.cpp.o
+
+Models/AssetPrice.i: Models/AssetPrice.cpp.i
+
+.PHONY : Models/AssetPrice.i
+
+# target to preprocess a source file
+Models/AssetPrice.cpp.i:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/AssetPrice.cpp.i
+.PHONY : Models/AssetPrice.cpp.i
+
+Models/AssetPrice.s: Models/AssetPrice.cpp.s
+
+.PHONY : Models/AssetPrice.s
+
+# target to generate assembly for a file
+Models/AssetPrice.cpp.s:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/AssetPrice.cpp.s
+.PHONY : Models/AssetPrice.cpp.s
+
+Models/LogNormalPrice.o: Models/LogNormalPrice.cpp.o
+
+.PHONY : Models/LogNormalPrice.o
+
+# target to build an object file
+Models/LogNormalPrice.cpp.o:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/LogNormalPrice.cpp.o
+.PHONY : Models/LogNormalPrice.cpp.o
+
+Models/LogNormalPrice.i: Models/LogNormalPrice.cpp.i
+
+.PHONY : Models/LogNormalPrice.i
+
+# target to preprocess a source file
+Models/LogNormalPrice.cpp.i:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/LogNormalPrice.cpp.i
+.PHONY : Models/LogNormalPrice.cpp.i
+
+Models/LogNormalPrice.s: Models/LogNormalPrice.cpp.s
+
+.PHONY : Models/LogNormalPrice.s
+
+# target to generate assembly for a file
+Models/LogNormalPrice.cpp.s:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/LogNormalPrice.cpp.s
+.PHONY : Models/LogNormalPrice.cpp.s
+
+Models/ModelBase.o: Models/ModelBase.cpp.o
+
+.PHONY : Models/ModelBase.o
+
+# target to build an object file
+Models/ModelBase.cpp.o:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/ModelBase.cpp.o
+.PHONY : Models/ModelBase.cpp.o
+
+Models/ModelBase.i: Models/ModelBase.cpp.i
+
+.PHONY : Models/ModelBase.i
+
+# target to preprocess a source file
+Models/ModelBase.cpp.i:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/ModelBase.cpp.i
+.PHONY : Models/ModelBase.cpp.i
+
+Models/ModelBase.s: Models/ModelBase.cpp.s
+
+.PHONY : Models/ModelBase.s
+
+# target to generate assembly for a file
+Models/ModelBase.cpp.s:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/ModelBase.cpp.s
+.PHONY : Models/ModelBase.cpp.s
+
+MonteCarlo.o: MonteCarlo.cpp.o
+
+.PHONY : MonteCarlo.o
+
+# target to build an object file
+MonteCarlo.cpp.o:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/MonteCarlo.cpp.o
+.PHONY : MonteCarlo.cpp.o
+
+MonteCarlo.i: MonteCarlo.cpp.i
+
+.PHONY : MonteCarlo.i
+
+# target to preprocess a source file
+MonteCarlo.cpp.i:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/MonteCarlo.cpp.i
+.PHONY : MonteCarlo.cpp.i
+
+MonteCarlo.s: MonteCarlo.cpp.s
+
+.PHONY : MonteCarlo.s
+
+# target to generate assembly for a file
+MonteCarlo.cpp.s:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/MonteCarlo.cpp.s
+.PHONY : MonteCarlo.cpp.s
 
 RandNumGen/PMSeedGen.o: RandNumGen/PMSeedGen.cpp.o
 
@@ -204,6 +393,87 @@ RandNumGen/RandUniform.cpp.s:
 	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/RandNumGen/RandUniform.cpp.s
 .PHONY : RandNumGen/RandUniform.cpp.s
 
+SimResults/DataSet.o: SimResults/DataSet.cpp.o
+
+.PHONY : SimResults/DataSet.o
+
+# target to build an object file
+SimResults/DataSet.cpp.o:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/SimResults/DataSet.cpp.o
+.PHONY : SimResults/DataSet.cpp.o
+
+SimResults/DataSet.i: SimResults/DataSet.cpp.i
+
+.PHONY : SimResults/DataSet.i
+
+# target to preprocess a source file
+SimResults/DataSet.cpp.i:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/SimResults/DataSet.cpp.i
+.PHONY : SimResults/DataSet.cpp.i
+
+SimResults/DataSet.s: SimResults/DataSet.cpp.s
+
+.PHONY : SimResults/DataSet.s
+
+# target to generate assembly for a file
+SimResults/DataSet.cpp.s:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/SimResults/DataSet.cpp.s
+.PHONY : SimResults/DataSet.cpp.s
+
+SimResults/PathBase.o: SimResults/PathBase.cpp.o
+
+.PHONY : SimResults/PathBase.o
+
+# target to build an object file
+SimResults/PathBase.cpp.o:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/SimResults/PathBase.cpp.o
+.PHONY : SimResults/PathBase.cpp.o
+
+SimResults/PathBase.i: SimResults/PathBase.cpp.i
+
+.PHONY : SimResults/PathBase.i
+
+# target to preprocess a source file
+SimResults/PathBase.cpp.i:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/SimResults/PathBase.cpp.i
+.PHONY : SimResults/PathBase.cpp.i
+
+SimResults/PathBase.s: SimResults/PathBase.cpp.s
+
+.PHONY : SimResults/PathBase.s
+
+# target to generate assembly for a file
+SimResults/PathBase.cpp.s:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/SimResults/PathBase.cpp.s
+.PHONY : SimResults/PathBase.cpp.s
+
+SimResults/ResultsHeaderBase.o: SimResults/ResultsHeaderBase.cpp.o
+
+.PHONY : SimResults/ResultsHeaderBase.o
+
+# target to build an object file
+SimResults/ResultsHeaderBase.cpp.o:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/SimResults/ResultsHeaderBase.cpp.o
+.PHONY : SimResults/ResultsHeaderBase.cpp.o
+
+SimResults/ResultsHeaderBase.i: SimResults/ResultsHeaderBase.cpp.i
+
+.PHONY : SimResults/ResultsHeaderBase.i
+
+# target to preprocess a source file
+SimResults/ResultsHeaderBase.cpp.i:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/SimResults/ResultsHeaderBase.cpp.i
+.PHONY : SimResults/ResultsHeaderBase.cpp.i
+
+SimResults/ResultsHeaderBase.s: SimResults/ResultsHeaderBase.cpp.s
+
+.PHONY : SimResults/ResultsHeaderBase.s
+
+# target to generate assembly for a file
+SimResults/ResultsHeaderBase.cpp.s:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/SimResults/ResultsHeaderBase.cpp.s
+.PHONY : SimResults/ResultsHeaderBase.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -240,6 +510,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... FintegralProject"
+	@echo "... DataStorage/AssetPriceData.o"
+	@echo "... DataStorage/AssetPriceData.i"
+	@echo "... DataStorage/AssetPriceData.s"
+	@echo "... DataStorage/InnerDataStorage.o"
+	@echo "... DataStorage/InnerDataStorage.i"
+	@echo "... DataStorage/InnerDataStorage.s"
+	@echo "... DataStorage/PathData.o"
+	@echo "... DataStorage/PathData.i"
+	@echo "... DataStorage/PathData.s"
+	@echo "... Models/AssetPrice.o"
+	@echo "... Models/AssetPrice.i"
+	@echo "... Models/AssetPrice.s"
+	@echo "... Models/LogNormalPrice.o"
+	@echo "... Models/LogNormalPrice.i"
+	@echo "... Models/LogNormalPrice.s"
+	@echo "... Models/ModelBase.o"
+	@echo "... Models/ModelBase.i"
+	@echo "... Models/ModelBase.s"
+	@echo "... MonteCarlo.o"
+	@echo "... MonteCarlo.i"
+	@echo "... MonteCarlo.s"
 	@echo "... RandNumGen/PMSeedGen.o"
 	@echo "... RandNumGen/PMSeedGen.i"
 	@echo "... RandNumGen/PMSeedGen.s"
@@ -249,6 +540,15 @@ help:
 	@echo "... RandNumGen/RandUniform.o"
 	@echo "... RandNumGen/RandUniform.i"
 	@echo "... RandNumGen/RandUniform.s"
+	@echo "... SimResults/DataSet.o"
+	@echo "... SimResults/DataSet.i"
+	@echo "... SimResults/DataSet.s"
+	@echo "... SimResults/PathBase.o"
+	@echo "... SimResults/PathBase.i"
+	@echo "... SimResults/PathBase.s"
+	@echo "... SimResults/ResultsHeaderBase.o"
+	@echo "... SimResults/ResultsHeaderBase.i"
+	@echo "... SimResults/ResultsHeaderBase.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

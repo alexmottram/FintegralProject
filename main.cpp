@@ -1,43 +1,27 @@
 #include <iostream>
-
 #include "RandNumGen/RandBase.h"
 #include "RandNumGen/RandUniform.h"
+#include "Models/LogNormalPrice.h"
+#include "DataStorage/AssetPriceData.h"
+#include "MonteCarlo.h"
 
 int main() {
-
-    std::cout << "Hello, World!" << std::endl;
-
     RandUniform generator(10,1);
+    AssetPriceData resultsHeader(100,2,101);
+    LogNormalPrice pricingModel(1001, 4.0, 100, 0.02, 0.4, resultsHeader,generator);
 
-    std::vector<double> randomResults;
-    std::vector<double> gaussianResults;
+    MonteCarlo MonteCarloSim1(pricingModel, 1000);
+    MonteCarloSim1.Run();
+    MonteCarloSim1.DumpTimerToConsole();
+    resultsHeader.BufferedPrintPricesToCSV("test_file2.csv");
 
-    int extreme = 6;
-    std::vector<double> extremeResults;
+    std::cout << "The mean end price is " << resultsHeader.MeanEndPrice() << " the variance is "
+              << resultsHeader.VarianceEndPrice() << " and the standard deviation is " << resultsHeader.StdDevEndPrice()
+              << " ." << std::endl;
 
-    generator.GetUniforms(randomResults);
-    generator.GetGaussians(gaussianResults);
-
-    for (std::size_t i; i < randomResults.size(); i++) {
-        std::cout << randomResults[i] << "  " << gaussianResults[i] << std::endl;
-
-        if( gaussianResults[i] > extreme || gaussianResults[i] < - extreme) {
-            extremeResults.push_back(gaussianResults[i]);
-        }
-    }
-
-    std::cout << "Second set:" << std::endl;
-
-    std::vector<double> randomResults2;
-    std::vector<double> gaussianResults2;
-
-    generator.GetUniforms(randomResults2);
-    generator.GetGaussians(gaussianResults2);
-
-    for (std::size_t i; i < randomResults2.size(); i++) {
-        std::cout << randomResults2[i] << "  " << gaussianResults2[i] << std::endl;
-    }
-
+//    for (std::size_t i=1; i < resultsHeader.GetNumberOfPaths()+4; i++) {
+//        resultsHeader.DumpPathXToConsole(i,14);
+//    }
 
     return 0;
 }

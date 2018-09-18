@@ -17,6 +17,7 @@ RandBase* RandUniform::clone() const {
 
 void RandUniform::GetUniforms(std::vector<double> &variates) {
 
+    std::vector<double> tmpVariates;
 
     for (size_t i = 0; i < GetDimensionality(); i++) {
 
@@ -25,8 +26,10 @@ void RandUniform::GetUniforms(std::vector<double> &variates) {
         while (x==0.0 || x==1.0) {
             x = Distribution(InnerGenerator);
         }
-        variates.push_back(x);
+        tmpVariates.push_back(x);
     }
+
+    variates = tmpVariates;
 }
 
 void RandUniform::Skip(std::size_t numberOfPaths_) {
