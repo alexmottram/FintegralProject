@@ -5,77 +5,51 @@
 
 #include "AssetPriceData.h"
 
-AssetPriceData::AssetPriceData(std::size_t NumberOfPaths_, std::size_t NumberOfVariables_, std::size_t NumberOfResults)
-        : InnerDataStorage(NumberOfPaths_, NumberOfVariables_, NumberOfResults) {
-
-}
-
 void AssetPriceData::AddOnePath(std::valarray<std::valarray<double>> results_) {
     InnerDataStorage::AddOnePath(PathData(std::valarray<std::string>{"Time","Price"},results_));
 }
 
-void AssetPriceData::PrintPricesToCSV(std::string filename_) const {
+void AssetPriceData::PrintPricesToCSV(const char *filename_) const {
 
-    auto t1 = std::chrono::high_resolution_clock::now();
+    auto t1a = std::chrono::high_resolution_clock::now();
 
-    if(GetNumberOfPaths()>0) {
-        std::ofstream CSVfile;
-        CSVfile.open (filename_);
-        std:size_t varColumns = GetNumberOfPaths() ;
-
-        CSVfile << GetPathX(0).GetHeaders()[0] << ", ";
-        for (std::size_t i=0; i < GetNumberOfPaths(); i++) {
-            CSVfile << GetPathX(i).GetHeaders()[1] << " Path " << i << ", ";
-        }
-
-        CSVfile << "\n";
-
-        for (std::size_t j=0; j < GetPathX(0).GetNumberOfDataPoints(); j++) {
-
-            CSVfile << GetPathX(0).GetSingleResultX(j)[0] << ", ";
-
-            for (std::size_t i=0; i < GetNumberOfPaths(); i++) {
-                CSVfile << GetPathX(i).GetSingleResultX(j)[1]<< ", ";
-            }
-
-            CSVfile << "\n";
-        }
-
-        CSVfile << std::endl;
-    }
-
-    auto t2 = std::chrono::high_resolution_clock::now();
-    double Timer = std::chrono::duration_cast<std::chrono::milliseconds>(t2-t1).count();
-    std::cout << "Saving the data to CSV completed in " << Timer << " milliseconds." << std::endl;
-
-}
-
-void AssetPriceData::BufferedPrintPricesToCSV(const char *filename_) const {
-
-    auto t1 = std::chrono::high_resolution_clock::now();
 
     if(GetNumberOfPaths()>0) {
-        // std::ofstream CSVfile;
+
         FILE *dataFile;
         dataFile = fopen(filename_, "w");
 
         std::valarray<double> priceResults(GetNumberOfPaths());
         std::stringstream stringBuffer;
+        std::size_t numberOfPaths = GetNumberOfPaths();
 
         stringBuffer << GetPathX(0).GetHeaders()[0] << ", ";
-        for (std::size_t i=0; i < GetNumberOfPaths(); i++) {
+        for (std::size_t i=0; i < numberOfPaths; i++) {
             stringBuffer << GetPathX(i).GetHeaders()[1] << " Path " << i << ", ";
         }
 
         stringBuffer << "\n";
 
+        std::valarray<double> time = GetPathX(0).GetSingleColumnX(0);
+        std::size_t numberOfDataPoints = GetPathX(0).GetNumberOfDataPoints();
 
-        for (std::size_t j=0; j < GetPathX(0).GetNumberOfDataPoints(); j++) {
+        std::stringstream MessageSS;
+        MessageSS << "Writing results to file with name: " << filename_ << " .";
 
-            stringBuffer << GetPathX(0).GetSingleResultX(j)[0] << ", ";
+        ProgressBar csvProgress(numberOfDataPoints, MessageSS.str());
+
+        for (std::size_t j=0; j < numberOfDataPoints; j++) {
+
+            csvProgress.Refresh(j);
+
+            stringBuffer << time[j] << ", ";
+
             priceResults = GetCrossSection(1,j);
-            for (auto points : priceResults) {
-                stringBuffer << points << ", ";
+
+            std::chrono::high_resolution_clock::time_point t3a = std::chrono::high_resolution_clock::now();
+            /// This loop here is currently the limiting factor in writing the data to CSV
+            for (std::size_t i=0; i < numberOfPaths; i++) {
+                stringBuffer << priceResults[i] << ", ";
             }
 
             stringBuffer << "\n";
@@ -83,13 +57,12 @@ void AssetPriceData::BufferedPrintPricesToCSV(const char *filename_) const {
 
         fprintf(dataFile,stringBuffer.str().c_str());
         fclose(dataFile);
-
-        //CSVfile << std::endl;
     }
 
-    auto t2 = std::chrono::high_resolution_clock::now();
-    double Timer = std::chrono::duration_cast<std::chrono::milliseconds>(t2-t1).count();
-    std::cout << "Saving the data using buffer to CSV completed in " << Timer << " milliseconds." << std::endl;
+    auto t1b = std::chrono::high_resolution_clock::now();
+    double timer1 = std::chrono::duration_cast<std::chrono::milliseconds>(t1b-t1a).count();
+
+    std::cout << "Saving the data using stringstream to CSV completed in " << timer1 << " milliseconds." << std::endl;
 
 }
 
@@ -97,10 +70,14 @@ double AssetPriceData::MeanEndPrice() const {
 
     double mean = 0.0;
 
+
+
     if (GetNumberOfPaths() > 0) {
 
-        for (auto path : GetPathResults()) {
-            mean += path.GetSingleResultX(path.GetNumberOfDataPoints()-1)[1];
+        std::valarray<double> allFinalPrices = GetCrossSection(1,GetPathX(0).GetNumberOfDataPoints()-1);
+
+        for (auto finalPrice : allFinalPrices) {
+            mean += finalPrice;
         }
 
         mean = mean/GetNumberOfPaths();
@@ -119,8 +96,10 @@ double AssetPriceData::VarianceEndPrice() const{
 
     if (GetNumberOfPaths() > 0) {
 
-        for (auto path : GetPathResults()) {
-            double linearDiff = path.GetSingleResultX(path.GetNumberOfDataPoints()-1)[1] - mean;
+        std::valarray<double> allFinalPrices = GetCrossSection(1,GetPathX(0).GetNumberOfDataPoints()-1);
+
+        for (auto finalPrice : allFinalPrices) {
+            double linearDiff = finalPrice - mean;
             variance += linearDiff * linearDiff;
         }
 
@@ -141,8 +120,10 @@ double AssetPriceData::StdDevEndPrice() const {
 
     if (GetNumberOfPaths() > 0) {
 
-        for (auto path : GetPathResults()) {
-            double linearDiff = path.GetSingleResultX(path.GetNumberOfDataPoints()-1)[1] - mean;
+        std::valarray<double> allFinalPrices = GetCrossSection(1,GetPathX(0).GetNumberOfDataPoints()-1);
+
+        for (auto finalPrice : allFinalPrices) {
+            double linearDiff = finalPrice - mean;
             variance += linearDiff * linearDiff;
         }
 
@@ -153,4 +134,29 @@ double AssetPriceData::StdDevEndPrice() const {
     }
 
     return stdDev;
+}
+
+CDF AssetPriceData::GetCDFofXatY(std::size_t variableX_, std::size_t resultY_) const {
+
+    if(GetNumberOfPaths() > 0) {
+
+        if(variableX_ < GetPathX(0).GetNumberOfVariables() && resultY_ < GetPathX(0).GetNumberOfDataPoints()) {
+
+            std::valarray<double> tmpVector = GetCrossSection(variableX_, resultY_);
+            std::valarray<std::valarray<double>> tmpCDF(tmpVector.size());
+
+            std::sort(std::begin(tmpVector), std::end(tmpVector));
+
+
+            for (size_t i=0; i < tmpVector.size(); i++) {
+                double percentile = (static_cast<double>(i) + 1.0)/ static_cast<double>(tmpVector.size());
+                tmpCDF[i] = std::valarray<double>{tmpVector[i],percentile};
+            }
+
+            return CDF(tmpCDF);
+        }
+
+    }
+
+    return CDF();
 }

@@ -13,7 +13,10 @@ void MonteCarlo::Run() {
 
     auto t1 = std::chrono::high_resolution_clock::now();
 
+    ProgressBar PathProgress(NumberPaths, std::string("Running monte carlo simulation."));
+
     for (size_t i=0; i < NumberPaths; i++ ) {
+        PathProgress.Refresh(i);
         Model.RunModelOnce();
     }
 

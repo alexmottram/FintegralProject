@@ -12,50 +12,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da52b46d-4125-4739-b3f6-308813c0d5c2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataStorage/AssetPriceData.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataStorage/AssetPriceData.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataStorage/InnerDataStorage.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataStorage/InnerDataStorage.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataStorage/PathData.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataStorage/PathData.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/AssetPrice.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/AssetPrice.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/LogNormalPrice.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/LogNormalPrice.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/ModelBase.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/ModelBase.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MonteCarlo.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MonteCarlo.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimResults/DataSet.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimResults/DataSet.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimResults/PathBase.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimResults/PathBase.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimResults/ResultsHeaderBase.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimResults/ResultsHeaderBase.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gdb.exe.stackdump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataStorage/CDF.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/RiskNeutralPrice.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/RiskNeutralPrice.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20050518.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Useful Docs/Variance Reduction Slides.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6f334bd4865b105005b887478003ce9bd3e2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Useful Docs/Variance Reduction Guide.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programming Task.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Useful Docs/Programming Task.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandNumGen/RandBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/RandNumGen/RandBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandNumGen/RandUniform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/RandNumGen/RandUniform.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Variance Reduction Technique for Options pricings.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Useful Docs/Variance Reduction Technique for Options pricings.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Variance Reduction Techniques.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Useful Docs/Variance Reduction Techniques.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStorage/AssetPriceData.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/AssetPriceData.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStorage/AssetPriceData.h" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/AssetPriceData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStorage/InnerDataStorage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/InnerDataStorage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStorage/InnerDataStorage.h" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/InnerDataStorage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStorage/PathData.h" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/PathData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/LogNormalPrice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Models/RealWorldPrice.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/LogNormalPrice.h" beforeDir="false" afterPath="$PROJECT_DIR$/Models/RealWorldPrice.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/RiskNeutralLogNormPrice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/CDF.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/RiskNeutralLogNormPrice.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonteCarlo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MonteCarlo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonteCarlo.h" beforeDir="false" afterPath="$PROJECT_DIR$/MonteCarlo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonteCarloSimPlots.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/MonteCarloSimPlots.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgressBar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressBar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgressBar.h" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressBar.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/DataStorage/AssetPriceData.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/DataStorage/AssetPriceData.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/DataStorage/InnerDataStorage.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/DataStorage/InnerDataStorage.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/DataStorage/PathData.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/DataStorage/PathData.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/RandNumGen/PMSeedGen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/RandNumGen/PMSeedGen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/RandNumGen/RandBase.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/RandNumGen/RandBase.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/RandNumGen/RandUniform.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/RandNumGen/RandUniform.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/Models/AssetPrice.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/Models/AssetPrice.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/Models/LogNormalPrice.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/Models/LogNormalPrice.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/Models/ModelBase.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/Models/ModelBase.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/MonteCarlo.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/MonteCarlo.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/SimResults/DataSet.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/SimResults/PathBase.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/SimResults/ResultsHeaderBase.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FintegralProject.dir/depend.internal" afterDir="false" />
@@ -66,12 +54,12 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/FintegralProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/FintegralProject.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/FintegralProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/FintegralProject.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/FintegralProject.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/FintegralProject.exe.stackdump" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test_file.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test_file.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test_file2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test_file2.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -84,135 +72,112 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PathData.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStorage/PathData.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-              <folding>
-                <element signature="e#116#135#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PathData.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStorage/PathData.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <element signature="e#874#1218#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssetPriceData.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStorage/AssetPriceData.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
-              <folding>
-                <element signature="e#422#1276#0" />
-                <element signature="e#1246#1757#0" />
-                <element signature="e#1759#2379#0" />
-                <element signature="e#2381#3027#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogNormalPrice.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/LogNormalPrice.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandUniform.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGen/RandUniform.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#67#291#0" />
-                <element signature="e#293#369#0" />
-                <element signature="e#742#909#0" />
-                <element signature="e#911#1040#0" />
-                <element signature="e#1042#1133#0" />
-                <element signature="e#1135#1325#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InnerDataStorage.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStorage/InnerDataStorage.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-              <folding>
-                <element signature="e#131#149#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InnerDataStorage.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStorage/InnerDataStorage.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-              <folding>
-                <element signature="e#691#861#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssetPrice.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/AssetPrice.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-              <folding>
-                <element signature="e#67#432#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssetPriceData.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStorage/AssetPriceData.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#127#145#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="663">
+                  <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MonteCarlo.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/MonteCarlo.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#119#137#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AssetPriceData.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/DataStorage/AssetPriceData.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+                  <folding>
+                    <element signature="e#373#391#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="InnerDataStorage.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DataStorage/InnerDataStorage.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="680">
+                  <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+                  <folding>
+                    <element signature="e#131#149#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PathData.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DataStorage/PathData.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#65#414#0" />
+                    <element signature="e#416#566#0" />
+                    <element signature="e#805#1024#0" />
+                    <element signature="e#1026#1365#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CDF.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DataStorage/CDF.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1275">
+                  <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+                  <folding>
+                    <element signature="e#104#123#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="AssetPriceData.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/DataStorage/AssetPriceData.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" selection-start-line="6" selection-end-line="6" />
+                  <folding>
+                    <element signature="e#278#457#0" />
+                    <element signature="e#459#2359#0" />
+                    <element signature="e#2361#2842#0" />
+                    <element signature="e#2844#3454#0" />
+                    <element signature="e#3456#4092#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>InnerDataStorage</find>
+    </findStrings>
     <dirStrings>
       <dir>C:\Git\FintegralProject</dir>
     </dirStrings>
@@ -223,13 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/RandNumGen/RandBase.cpp" />
-        <option value="$PROJECT_DIR$/RandNumGen/RandUniform.h" />
-        <option value="$PROJECT_DIR$/RandNumGen/RandUniform.cpp" />
-        <option value="$PROJECT_DIR$/SimResult.h" />
-        <option value="$PROJECT_DIR$/ModelBase.h" />
-        <option value="$PROJECT_DIR$/ModelAssetPrice.h" />
-        <option value="$PROJECT_DIR$/AssetPrice.h" />
         <option value="$PROJECT_DIR$/RandNumGen/RandBase.h" />
         <option value="$PROJECT_DIR$/PathResult.h" />
         <option value="$PROJECT_DIR$/PathResult.cpp" />
@@ -261,19 +219,26 @@
         <option value="$PROJECT_DIR$/Models/AssetPrice.cpp" />
         <option value="$PROJECT_DIR$/Models/LogNormalPrice.h" />
         <option value="$PROJECT_DIR$/Models/ModelBase.cpp" />
-        <option value="$PROJECT_DIR$/MonteCarlo.h" />
         <option value="$PROJECT_DIR$/DataStorage/SingleResult.h" />
         <option value="$PROJECT_DIR$/Models/AssetPrice.h" />
         <option value="$PROJECT_DIR$/Models/ModelBase.h" />
-        <option value="$PROJECT_DIR$/MonteCarlo.cpp" />
         <option value="$PROJECT_DIR$/Models/LogNormalPrice.cpp" />
-        <option value="$PROJECT_DIR$/DataStorage/AssetPriceData.h" />
         <option value="$PROJECT_DIR$/DataStorage/PathData.cpp" />
-        <option value="$PROJECT_DIR$/DataStorage/PathData.h" />
-        <option value="$PROJECT_DIR$/DataStorage/InnerDataStorage.h" />
-        <option value="$PROJECT_DIR$/DataStorage/InnerDataStorage.cpp" />
-        <option value="$PROJECT_DIR$/DataStorage/AssetPriceData.cpp" />
+        <option value="$PROJECT_DIR$/ProgressBar.h" />
+        <option value="$PROJECT_DIR$/ProgressBar.cpp" />
+        <option value="$PROJECT_DIR$/MonteCarlo.h" />
+        <option value="$PROJECT_DIR$/MonteCarlo.cpp" />
+        <option value="$PROJECT_DIR$/Models/RiskNeutralLogNormPrice.cpp" />
+        <option value="$PROJECT_DIR$/Models/RiskNeutralLogNormPrice.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/DataStorage/CDF.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/DataStorage/InnerDataStorage.cpp" />
+        <option value="$PROJECT_DIR$/DataStorage/PathData.h" />
+        <option value="$PROJECT_DIR$/DataStorage/CDF.h" />
+        <option value="$PROJECT_DIR$/DataStorage/AssetPriceData.cpp" />
+        <option value="$PROJECT_DIR$/DataStorage/InnerDataStorage.h" />
+        <option value="$PROJECT_DIR$/DataStorage/AssetPriceData.h" />
       </list>
     </option>
   </component>
@@ -283,17 +248,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1734" />
-    <option name="height" value="1408" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="2243" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,10 +275,16 @@
               <item name="FintegralProject" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FintegralProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FintegralProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Useful Docs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,34 +344,37 @@
       <workItem from="1537189672813" duration="9707000" />
       <workItem from="1537205517128" duration="16667000" />
       <workItem from="1537257260967" duration="11335000" />
+      <workItem from="1537271373198" duration="7377000" />
+      <workItem from="1537280282358" duration="6268000" />
+      <workItem from="1537292635948" duration="14558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85653000" />
+    <option name="totallyTimeSpent" value="113856000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <frame x="-7" y="0" width="2243" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13405553" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17324263" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.44272077" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3246651" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.3293556" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32939324" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3293556" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33096927" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398568" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39795116" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,31 +392,20 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/DataStorage/InnerDataStorage.cpp</url>
-          <line>41</line>
-          <option name="timeStamp" value="40" />
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>38</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/DataStorage/InnerDataStorage.cpp</url>
-          <line>43</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/DataStorage/InnerDataStorage.cpp</url>
+          <url>file://$PROJECT_DIR$/main.cpp</url>
           <line>37</line>
-          <option name="timeStamp" value="42" />
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="55" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_DesignCPP.zip/mains/SimpleMCMain5.cpp" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_DesignCPP.zip/source/Random1.cpp" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_DesignCPP.zip/include/Random2.h" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_DesignCPP.zip/source/MCStatistics.cpp" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_DesignCPP.zip/include/Random3.h" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_DesignCPP.zip/source/Normals.cpp" />
     <entry file="file://$PROJECT_DIR$/RandNumGen/PMSeedGen.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -451,13 +413,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.10.0-1/winsup/cygwin/fhandler_console.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="2618" selection-start-line="2618" selection-end-line="2618" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.10.0-1/winsup/cygwin/fhandler_console.cc" />
     <entry file="file://$PROJECT_DIR$/RandNumGen/PMSeedGen.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -465,76 +421,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/ext/alloc_traits.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/cpp_type_traits.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="408" selection-start-line="408" selection-end-line="408" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/stl_iterator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="776" selection-start-line="776" selection-end-line="776" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/stl_algobase.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="456" selection-start-line="456" selection-end-line="456" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/vector.tcc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="220" selection-start-line="220" selection-end-line="220" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/stl_construct.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/alloc_traits.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="461" selection-start-line="461" selection-end-line="461" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/ext/new_allocator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.10.0-1/winsup/cygwin/libstdcxx_wrapper.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/stl_vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="177" selection-start-line="177" selection-end-line="177" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/ext/alloc_traits.h" />
+    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/cpp_type_traits.h" />
+    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/stl_iterator.h" />
+    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/stl_algobase.h" />
+    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/vector.tcc" />
+    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/stl_construct.h" />
+    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/alloc_traits.h" />
+    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/ext/new_allocator.h" />
+    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.10.0-1/winsup/cygwin/libstdcxx_wrapper.cc" />
+    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/stl_vector.h" />
     <entry file="file://$PROJECT_DIR$/RandNumGen/RandBase.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
@@ -549,40 +445,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimResults/DataSet.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimResults/PathBase.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-          <folding>
-            <element signature="e#141#778#0" />
-            <element signature="e#780#1106#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SimResults/DataSet.cpp" />
+    <entry file="file://$PROJECT_DIR$/SimResults/PathBase.cpp" />
     <entry file="file://$PROJECT_DIR$/SimResults/PricePath.h" />
     <entry file="file://$PROJECT_DIR$/SimResults/PricePath.cpp" />
-    <entry file="file://$PROJECT_DIR$/SimResults/DataSet.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimResults/PathBase.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SimResults/DataSet.h" />
+    <entry file="file://$PROJECT_DIR$/SimResults/PathBase.h" />
     <entry file="file://$PROJECT_DIR$/RandNumGen/RandUniform.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -592,208 +460,194 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SimResults/PriceResultsHeader.cpp" />
     <entry file="file://$PROJECT_DIR$/SimResults/PriceResultsHeader.h" />
-    <entry file="file://$PROJECT_DIR$/Models/ModelBase.cpp">
+    <entry file="file://$PROJECT_DIR$/Models/ModelBase.cpp" />
+    <entry file="file://$PROJECT_DIR$/SimResults/ResultsHeaderBase.h" />
+    <entry file="file://$PROJECT_DIR$/SimResults/ResultsHeaderBase.cpp" />
+    <entry file="file://$PROJECT_DIR$/DataStorage/SingleResult.h" />
+    <entry file="file://$PROJECT_DIR$/DataStorage/SingleResult.cpp" />
+    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/valarray" />
+    <entry file="file://$PROJECT_DIR$/Models/AssetPrice.cpp" />
+    <entry file="file://$PROJECT_DIR$/RandNumGen/RandUniform.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="527">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/ModelBase.h">
+    <entry file="file://$PROJECT_DIR$/ProgressBar.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="136">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimResults/ResultsHeaderBase.h">
+    <entry file="file://$PROJECT_DIR$/ProgressBar.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="95" />
-          <folding>
-            <element signature="e#131#148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimResults/ResultsHeaderBase.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="55" column="5" selection-start-line="33" selection-start-column="3" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="e#74#159#0" />
-            <element signature="e#161#307#0" />
-            <element signature="e#309#396#0" />
-            <element signature="e#398#692#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MonteCarlo.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="e#119#137#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MonteCarlo.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="107" />
+        <state relative-caret-position="255">
+          <caret line="15" column="90" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="90" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/AssetPrice.h">
+    <entry file="file://$PROJECT_DIR$/Models/RealWorldPrice.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/RiskNeutralPrice.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
-            <element signature="e#119#137#0" expanded="true" />
+            <element signature="e#144#167#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataStorage/SingleResult.h">
+    <entry file="file://$PROJECT_DIR$/Models/RiskNeutralPrice.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-          <folding>
-            <element signature="e#123#140#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="578">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataStorage/SingleResult.cpp">
+    <entry file="file://$PROJECT_DIR$/Models/RealWorldPrice.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#69#180#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/LogNormalPrice.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="22" />
           <folding>
             <element signature="e#127#144#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/valarray">
+    <entry file="file://$PROJECT_DIR$/Models/AssetPrice.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="733" selection-start-line="733" selection-end-line="733" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataStorage/AssetPriceData.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state>
           <folding>
-            <element signature="e#127#145#0" expanded="true" />
+            <element signature="e#119#137#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataStorage/PathData.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="85">
+          <caret line="5" column="270" selection-start-line="5" selection-start-column="270" selection-end-line="5" selection-end-column="270" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MonteCarlo.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
-            <element signature="e#874#1218#0" />
+            <element signature="e#119#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStorage/CDF.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#59#169#0" />
+            <element signature="e#174#338#0" />
+            <element signature="e#247#381#0" />
+            <element signature="e#383#1251#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStorage/InnerDataStorage.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#803#1326#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataStorage/PathData.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        <state relative-caret-position="561">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
           <folding>
-            <element signature="e#116#135#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataStorage/InnerDataStorage.h">
+    <entry file="file://$PROJECT_DIR$/DataStorage/CDF.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="1275">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
-            <element signature="e#131#149#0" expanded="true" />
+            <element signature="e#104#123#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/AssetPrice.cpp">
+    <entry file="file://$PROJECT_DIR$/DataStorage/PathData.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+        <state relative-caret-position="187">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding>
-            <element signature="e#67#432#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGen/RandUniform.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#67#291#0" />
-            <element signature="e#293#369#0" />
-            <element signature="e#742#909#0" />
-            <element signature="e#911#1040#0" />
-            <element signature="e#1042#1133#0" />
-            <element signature="e#1135#1325#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/LogNormalPrice.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataStorage/InnerDataStorage.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#691#861#0" />
+            <element signature="e#65#414#0" />
+            <element signature="e#416#566#0" />
+            <element signature="e#805#1024#0" />
+            <element signature="e#1026#1365#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataStorage/AssetPriceData.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <element signature="e#422#1276#0" />
-            <element signature="e#1246#1757#0" />
-            <element signature="e#1759#2379#0" />
-            <element signature="e#2381#3027#0" />
+            <element signature="e#278#457#0" />
+            <element signature="e#459#2359#0" />
+            <element signature="e#2361#2842#0" />
+            <element signature="e#2844#3454#0" />
+            <element signature="e#3456#4092#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/DataStorage/InnerDataStorage.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="680">
+          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#131#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStorage/AssetPriceData.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding>
+            <element signature="e#373#391#0" expanded="true" />
           </folding>
         </state>
       </provider>

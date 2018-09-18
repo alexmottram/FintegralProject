@@ -7,7 +7,9 @@
 
 #include <cstdlib>
 #include <chrono>
+#include <string>
 #include "Models/ModelBase.h"
+#include "ProgressBar.h"
 
 class MonteCarlo {
 public:

@@ -1,4 +1,4 @@
-C:\Users\alexa\.CLion2018.1\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Git/FintegralProject
+C:\Users\Alex\.CLion2018.1\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Git/FintegralProject
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /cygdrive/c/Git/FintegralProject/cmake-build-debug

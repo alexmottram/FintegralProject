@@ -1,6 +1,14 @@
-//
-// Created by alexa on 17/09/2018.
-//
+/**
+ * File: AssetPriceData.h
+ * Language: C++
+ * Author: Alexander D. Mottram
+ *
+ * Data storage specifically for use with AssetPrice models.
+ *
+ * AssetPriceData is a subclass of InnerDataStorage.h designed specifically
+ * to be used in conjunction with any AssetPrice.h model.
+ *
+ */
 
 #ifndef FINTEGRALPROJECT_ASSETPRICEDATA_H
 #define FINTEGRALPROJECT_ASSETPRICEDATA_H
@@ -9,21 +17,28 @@
 #include <cmath>
 #include <chrono>
 #include <sstream>
+#include <algorithm>
 #include "InnerDataStorage.h"
+#include "CDF.h"
+#include "../ProgressBar.h"
 
 class AssetPriceData : public InnerDataStorage {
 public:
+    /**
+     * Empty constructor for AssetPriceData.
+     */
     AssetPriceData() : InnerDataStorage() {}
-    AssetPriceData(std::size_t NumberOfPaths_, std::size_t NumberOfVariables_, std::size_t NumberOfResults);
 
-    virtual void AddOnePath(std::valarray<std::valarray<double>> results_);
+    void AddOnePath(std::valarray<std::valarray<double>> results_);
 
-    void PrintPricesToCSV(std::string filename_) const;
-    void BufferedPrintPricesToCSV(const char *filename_) const;
-
+    void PrintPricesToCSV(const char *filename_) const;
     double MeanEndPrice() const;
     double VarianceEndPrice() const;
     double StdDevEndPrice() const;
+
+    CDF GetCDFofXatY(std::size_t variableX_, std::size_t resultY_) const;
+
+
 };
 
 
