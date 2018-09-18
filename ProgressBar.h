@@ -1,0 +1,14 @@
+//
+// Created by Alex on 18/09/2018.
+//
+
+#ifndef FINTEGRALPROJECT_PROGRESSBAR_H
+#define FINTEGRALPROJECT_PROGRESSBAR_H
+
+
+class ProgressBar {
+
+};
+
+
+#endif //FINTEGRALPROJECT_PROGRESSBAR_H
