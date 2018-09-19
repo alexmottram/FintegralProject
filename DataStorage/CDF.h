@@ -59,7 +59,7 @@ public:
     CDF(std::valarray<std::valarray<double>> Results_);
 
     /**
-     * Returns the nearest random variable value BELOW the entered percentile.
+     * Returns the nearest value for the random variable value BELOW the entered percentile.
      * NOTE: Although it says percentile, enter the parameter as a fraction.
      *
      * @param percentile_ The percentile (in fraction form) to find the nearest lower

@@ -12,24 +12,24 @@
  * of an "outer valarray" containing multiple "inner valarrays" of
  * doubles.
  *
- * Visual aid: Data is considered to be a 2D array with columns
- * consisting of the defined variables, and rows being the inner
- * valarrays.
- *
+ * Visual aid:                               Col 0      Col 1      Col 2   ...
+ * Outer valarray[i] Header valarray[i]: {Header[0], Header[1], Header[2], ...}
+ * Row 0    Outer[0] = Inner valarray[i] { Inner[0],  Inner[1],  Inner[2], ...}
+ * Row 1    Outer[1] = Inner valarray[i] { Inner[0],  Inner[1],  Inner[2], ...}
+ * Row 2    Outer[2] = Inner valarray[i] { Inner[0],  Inner[1],  Inner[2], ...}
+ *          ........
  *
  * Requirements:
  * 1) The inner data must be of the same format for all single results
  * 2) The inner data must be of type double
  * 3) The header must be applicable to all inner data
  * 4) The data is stored with the primary key being the number
- *    of the point and the secondary key being the variable.
- *
+ *    of the point and the secondary key being the variable. *
  */
 
 
 #ifndef FINTEGRALPROJECT_PATHDATA_H
 #define FINTEGRALPROJECT_PATHDATA_H
-
 
 #include <iostream>
 #include <vector>

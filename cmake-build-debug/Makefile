@@ -258,33 +258,6 @@ Models/AssetPrice.cpp.s:
 	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/AssetPrice.cpp.s
 .PHONY : Models/AssetPrice.cpp.s
 
-Models/LogNormalPrice.o: Models/LogNormalPrice.cpp.o
-
-.PHONY : Models/LogNormalPrice.o
-
-# target to build an object file
-Models/LogNormalPrice.cpp.o:
-	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/LogNormalPrice.cpp.o
-.PHONY : Models/LogNormalPrice.cpp.o
-
-Models/LogNormalPrice.i: Models/LogNormalPrice.cpp.i
-
-.PHONY : Models/LogNormalPrice.i
-
-# target to preprocess a source file
-Models/LogNormalPrice.cpp.i:
-	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/LogNormalPrice.cpp.i
-.PHONY : Models/LogNormalPrice.cpp.i
-
-Models/LogNormalPrice.s: Models/LogNormalPrice.cpp.s
-
-.PHONY : Models/LogNormalPrice.s
-
-# target to generate assembly for a file
-Models/LogNormalPrice.cpp.s:
-	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/LogNormalPrice.cpp.s
-.PHONY : Models/LogNormalPrice.cpp.s
-
 Models/ModelBase.o: Models/ModelBase.cpp.o
 
 .PHONY : Models/ModelBase.o
@@ -312,32 +285,32 @@ Models/ModelBase.cpp.s:
 	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/ModelBase.cpp.s
 .PHONY : Models/ModelBase.cpp.s
 
-Models/RiskNeutralLogNormPrice.o: Models/RiskNeutralLogNormPrice.cpp.o
+Models/RiskNeutralPrice.o: Models/RiskNeutralPrice.cpp.o
 
-.PHONY : Models/RiskNeutralLogNormPrice.o
+.PHONY : Models/RiskNeutralPrice.o
 
 # target to build an object file
-Models/RiskNeutralLogNormPrice.cpp.o:
-	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/RiskNeutralLogNormPrice.cpp.o
-.PHONY : Models/RiskNeutralLogNormPrice.cpp.o
+Models/RiskNeutralPrice.cpp.o:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/RiskNeutralPrice.cpp.o
+.PHONY : Models/RiskNeutralPrice.cpp.o
 
-Models/RiskNeutralLogNormPrice.i: Models/RiskNeutralLogNormPrice.cpp.i
+Models/RiskNeutralPrice.i: Models/RiskNeutralPrice.cpp.i
 
-.PHONY : Models/RiskNeutralLogNormPrice.i
+.PHONY : Models/RiskNeutralPrice.i
 
 # target to preprocess a source file
-Models/RiskNeutralLogNormPrice.cpp.i:
-	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/RiskNeutralLogNormPrice.cpp.i
-.PHONY : Models/RiskNeutralLogNormPrice.cpp.i
+Models/RiskNeutralPrice.cpp.i:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/RiskNeutralPrice.cpp.i
+.PHONY : Models/RiskNeutralPrice.cpp.i
 
-Models/RiskNeutralLogNormPrice.s: Models/RiskNeutralLogNormPrice.cpp.s
+Models/RiskNeutralPrice.s: Models/RiskNeutralPrice.cpp.s
 
-.PHONY : Models/RiskNeutralLogNormPrice.s
+.PHONY : Models/RiskNeutralPrice.s
 
 # target to generate assembly for a file
-Models/RiskNeutralLogNormPrice.cpp.s:
-	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/RiskNeutralLogNormPrice.cpp.s
-.PHONY : Models/RiskNeutralLogNormPrice.cpp.s
+Models/RiskNeutralPrice.cpp.s:
+	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/Models/RiskNeutralPrice.cpp.s
+.PHONY : Models/RiskNeutralPrice.cpp.s
 
 MonteCarlo.o: MonteCarlo.cpp.o
 
@@ -392,33 +365,6 @@ ProgressBar.s: ProgressBar.cpp.s
 ProgressBar.cpp.s:
 	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/ProgressBar.cpp.s
 .PHONY : ProgressBar.cpp.s
-
-RandNumGen/PMSeedGen.o: RandNumGen/PMSeedGen.cpp.o
-
-.PHONY : RandNumGen/PMSeedGen.o
-
-# target to build an object file
-RandNumGen/PMSeedGen.cpp.o:
-	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/RandNumGen/PMSeedGen.cpp.o
-.PHONY : RandNumGen/PMSeedGen.cpp.o
-
-RandNumGen/PMSeedGen.i: RandNumGen/PMSeedGen.cpp.i
-
-.PHONY : RandNumGen/PMSeedGen.i
-
-# target to preprocess a source file
-RandNumGen/PMSeedGen.cpp.i:
-	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/RandNumGen/PMSeedGen.cpp.i
-.PHONY : RandNumGen/PMSeedGen.cpp.i
-
-RandNumGen/PMSeedGen.s: RandNumGen/PMSeedGen.cpp.s
-
-.PHONY : RandNumGen/PMSeedGen.s
-
-# target to generate assembly for a file
-RandNumGen/PMSeedGen.cpp.s:
-	$(MAKE) -f CMakeFiles/FintegralProject.dir/build.make CMakeFiles/FintegralProject.dir/RandNumGen/PMSeedGen.cpp.s
-.PHONY : RandNumGen/PMSeedGen.cpp.s
 
 RandNumGen/RandBase.o: RandNumGen/RandBase.cpp.o
 
@@ -525,24 +471,18 @@ help:
 	@echo "... Models/AssetPrice.o"
 	@echo "... Models/AssetPrice.i"
 	@echo "... Models/AssetPrice.s"
-	@echo "... Models/LogNormalPrice.o"
-	@echo "... Models/LogNormalPrice.i"
-	@echo "... Models/LogNormalPrice.s"
 	@echo "... Models/ModelBase.o"
 	@echo "... Models/ModelBase.i"
 	@echo "... Models/ModelBase.s"
-	@echo "... Models/RiskNeutralLogNormPrice.o"
-	@echo "... Models/RiskNeutralLogNormPrice.i"
-	@echo "... Models/RiskNeutralLogNormPrice.s"
+	@echo "... Models/RiskNeutralPrice.o"
+	@echo "... Models/RiskNeutralPrice.i"
+	@echo "... Models/RiskNeutralPrice.s"
 	@echo "... MonteCarlo.o"
 	@echo "... MonteCarlo.i"
 	@echo "... MonteCarlo.s"
 	@echo "... ProgressBar.o"
 	@echo "... ProgressBar.i"
 	@echo "... ProgressBar.s"
-	@echo "... RandNumGen/PMSeedGen.o"
-	@echo "... RandNumGen/PMSeedGen.i"
-	@echo "... RandNumGen/PMSeedGen.s"
 	@echo "... RandNumGen/RandBase.o"
 	@echo "... RandNumGen/RandBase.i"
 	@echo "... RandNumGen/RandBase.s"

@@ -70,8 +70,6 @@ double AssetPriceData::MeanEndPrice() const {
 
     double mean = 0.0;
 
-
-
     if (GetNumberOfPaths() > 0) {
 
         std::valarray<double> allFinalPrices = GetCrossSection(1,GetPathX(0).GetNumberOfDataPoints()-1);
@@ -130,33 +128,68 @@ double AssetPriceData::StdDevEndPrice() const {
         stdDev = sqrt(variance/GetNumberOfPaths());
 
     } else {
-        std::cout << "ERROR: No paths available to calculate the end price variance." << std::endl;
+        std::cout << "ERROR: No paths available to calculate the end price standard deviation." << std::endl;
     }
 
     return stdDev;
 }
 
-CDF AssetPriceData::GetCDFofXatY(std::size_t variableX_, std::size_t resultY_) const {
+double AssetPriceData::ValueAtRiskAtTimeX(double risk_, size_t resultX_) const {
 
-    if(GetNumberOfPaths() > 0) {
+    double value = 0.0;
 
-        if(variableX_ < GetPathX(0).GetNumberOfVariables() && resultY_ < GetPathX(0).GetNumberOfDataPoints()) {
+    if( risk_ > 0 && risk_ < 1) {
 
-            std::valarray<double> tmpVector = GetCrossSection(variableX_, resultY_);
-            std::valarray<std::valarray<double>> tmpCDF(tmpVector.size());
+        if(GetNumberOfPaths() > 0) {
 
-            std::sort(std::begin(tmpVector), std::end(tmpVector));
+            CDF priceCDF = GetCDFofXatY(1,resultX_);
+            value = GetPathX(0).GetSingleResultX(0)[1] - priceCDF.GetFloorInverseCDF(risk_);
 
-
-            for (size_t i=0; i < tmpVector.size(); i++) {
-                double percentile = (static_cast<double>(i) + 1.0)/ static_cast<double>(tmpVector.size());
-                tmpCDF[i] = std::valarray<double>{tmpVector[i],percentile};
-            }
-
-            return CDF(tmpCDF);
+        } else {
+            std::cout << "ERROR: No paths available to calculate the end price variance." << std::endl;
         }
-
+    } else {
+        std::cout << "ERROR: The value of risk entered should be between 0 & 1 excluding those values, returning 0.0"
+                  << std::endl;
     }
 
-    return CDF();
+
+    return value;
+}
+
+double AssetPriceData::ValueAtRisk(double risk_, size_t resultX_) const {
+
+    double value = 0.0;
+    std::size_t stopPoint = resultX_;
+
+    if( risk_ > 0 && risk_ < 1) {
+
+        if(GetNumberOfPaths()>0) {
+
+            if(resultX_ > GetPathX(0).GetNumberOfDataPoints()) {
+                std::cout << "ERROR: Time selected is outside bounds, using full data set instead." << std::endl;
+                stopPoint = GetPathX(0).GetNumberOfDataPoints();
+            }
+
+            for (std::size_t i=0; i < stopPoint; i++) {
+
+                double tempValue = ValueAtRiskAtTimeX(risk_,i);
+                if(tempValue > value) {
+                    value = tempValue;
+                }
+            }
+
+        } else {
+            std::cout << "ERROR: No paths available to calculate the value at risk, returning 0.0." << std::endl;
+        }
+
+    } else {
+        std::cout << "ERROR: The value of risk entered should be between 0 & 1 excluding those values, returning 0.0"
+                  << std::endl;
+    }
+    return value;
+}
+
+double AssetPriceData::ValueAtRisk(double risk_) const {
+    return ValueAtRisk(risk_,GetPathX(0).GetNumberOfDataPoints());
 }

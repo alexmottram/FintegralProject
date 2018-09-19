@@ -8,9 +8,8 @@
  * InnerDataStorage is a generic base class that can store data that follows
  * the requirements of the PathData class. Data is added to initialised objects
  * by adding a single path of data back at a time. Access is provided by returning
- * all the path data, a single path result or a cross-section of the data in single
- * path.
- *
+ * all the path data, a single path result or a cross-section of the data from all
+ * paths.
  */
 
 #ifndef FINTEGRALPROJECT_INNERDATASTORAGE_H
@@ -20,6 +19,7 @@
 #include <vector>
 #include <valarray>
 #include "PathData.h"
+#include "CDF.h"
 
 class InnerDataStorage {
 public:
@@ -79,6 +79,20 @@ public:
      *         empty PathData object.
      */
     PathData GetPathX(std::size_t pathX_) const;
+
+    /**
+     * Creates a cumulative density function for a set of outcomes of a variable by
+     * selection of the variable and defining the row in the PathData to take the
+     * variable from.
+     *
+     * @param variableX_ The variable to calculate the CDF of.
+     * @param resultY_ The point in the PathData outer valarray to draw the variable
+     *                 data from.
+     *
+     * @return CDF object. If any of the parameters are out of bounds it will return
+     *         an empty CDF object.
+     */
+    CDF GetCDFofXatY(std::size_t variableX_, std::size_t resultY_) const;
 
 private:
     std::vector<PathData> PathResults;

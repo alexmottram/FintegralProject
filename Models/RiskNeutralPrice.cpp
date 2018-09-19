@@ -28,7 +28,6 @@ void RiskNeutralPrice::RunModelOnce() {
     RandGen.GetGaussians(randComponent);
 
     for (std::size_t i=0; i < GetTimeSteps(); i++) {
-        /// Check the equation for change in price
         results[i] = std::valarray<double>{time, price};
         time += timeDiff;
         price = price* exp( constTerm + (adjVol * randComponent[i]) );

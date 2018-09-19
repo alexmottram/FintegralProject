@@ -25,8 +25,14 @@ void MonteCarlo::Run() {
 
 }
 
+double MonteCarlo::GetTimeOfLastRun() const {
+    return Timer;
+}
+
+
 void MonteCarlo::DumpTimerToConsole() const {
 
     std::cout << "The last monte carlo simulation completed in " << Timer << " milliseconds." << std::endl;
 
 }
+

@@ -10,11 +10,6 @@ RandUniform::RandUniform(std::size_t Dimensionality_, size_t Seed_)
 
 }
 
-RandBase* RandUniform::clone() const {
-
-    return new RandUniform(*this);
-}
-
 void RandUniform::GetUniforms(std::vector<double> &variates) {
 
     std::vector<double> tmpVariates;

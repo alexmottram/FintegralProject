@@ -42,6 +42,31 @@ std::valarray<double> InnerDataStorage::GetCrossSection(std::size_t variableX_, 
     return crossSection;
 }
 
+CDF InnerDataStorage::GetCDFofXatY(std::size_t variableX_, std::size_t resultY_) const {
+
+    if(GetNumberOfPaths() > 0) {
+
+        if(variableX_ < GetPathX(0).GetNumberOfVariables() && resultY_ < GetPathX(0).GetNumberOfDataPoints()) {
+
+            std::valarray<double> tmpVector = GetCrossSection(variableX_, resultY_);
+            std::valarray<std::valarray<double>> tmpCDF(tmpVector.size());
+
+            std::sort(std::begin(tmpVector), std::end(tmpVector));
+
+
+            for (size_t i=0; i < tmpVector.size(); i++) {
+                double percentile = (static_cast<double>(i) + 1.0)/ static_cast<double>(tmpVector.size());
+                tmpCDF[i] = std::valarray<double>{tmpVector[i],percentile};
+            }
+
+            return CDF(tmpCDF);
+        }
+
+    }
+
+    return CDF();
+}
+
 
 
 
